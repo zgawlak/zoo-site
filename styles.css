@@ -22,12 +22,26 @@ body {
     align-items: center;
     width: 75%;
     margin: 0 auto;
+    background-color: lightblue;
 }
 
-.header-logo{
+.header-logo {
     width: 250px;
     height: 150px;
     background-color: blue;
+    flex-shrink: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .header-links {
+        justify-content: space-evenly;
+        width: 100%;
+    }
 }
 
 .header-links {
@@ -40,11 +54,13 @@ body {
 .footer {
     display: flex;
     flex-direction: column;
+    background-color: lightpink;
 }
 
 .footer-columns {
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: baseline;
     gap: 32px;
     width: 75%;
