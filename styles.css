@@ -1,3 +1,35 @@
 * {
     box-sizing: border-box;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    font-size: 14px;
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.header-logo{
+    width: 250px;
+    height: 150px;
+    background-color: blue;
+}
+
+.header-links {
+
+}
