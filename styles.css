@@ -2,13 +2,22 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Hind&family=Montserrat&display=swap');
+
 body {
     margin: 0;
     padding: 0;
     background-color: #fff;
-    font-size: 14px;
+    font-size: 18px;
     scroll-behavior: smooth;
     height: 100%;
+    font-family: 'Hind', sans-serif;
+    letter-spacing: .5px;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
 }
 
 .container {
@@ -39,6 +48,11 @@ body {
     font-weight: bold;
 }
 
+main {
+    width: min(65ch, 100% - 4rem);
+    margin-inline: auto;
+}
+
 .media-links {
     text-align: center;
     background-color: lightgreen;
@@ -52,18 +66,32 @@ body {
     margin: 40px auto;
 }
 
+.media-icons svg:hover {
+    fill: blue;
+}
+
 .footer {
     display: flex;
     flex-direction: column;
-    background-color: lightpink;
+    background-color: #215732;
     margin: 0 auto;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline wavy 2px;
 }
 
 .footer-columns {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 75%;
     margin: 0 auto;
 }
 
@@ -72,17 +100,21 @@ body {
     padding-left: 0;
 }
 
-.footer-column.column1 {
-    padding: 0 0 0 40px;
-}
-
-.footer-column.column2,
-.footer-column.column3 {
+.footer-column {
+    width: 260px;
+    margin: 0 auto;
     padding: 0 40px;
 }
 
-.footer-column.column4 {
-    padding: 0 40px 0 0;
+.footer hr {
+    width: 25%;
+    color: #fff;
+    margin-top: 50px;
+}
+
+.footer-credit {
+    text-align: center;
+    padding-top: 50px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -95,17 +127,5 @@ body {
     .header-links {
         justify-content: space-evenly;
         width: 100%;
-    }
-
-    .footer-columns {
-        width: 300px;
-        margin: 0 auto;
-    }
-    
-    .footer-column.column1,
-    .footer-column.column2,
-    .footer-column.column3,
-    .footer-column.column4 {
-        padding: 0 40px;
     }
 }
