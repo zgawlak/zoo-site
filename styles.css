@@ -7,7 +7,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #fff;
+    background-color: #e7e8ee;
     font-size: 18px;
     scroll-behavior: smooth;
     height: 100%;
@@ -31,7 +31,6 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     width: 75%;
     margin: 0 auto;
-    background-color: lightblue;
 }
 
 .header-logo {
@@ -55,19 +54,24 @@ main {
 
 .media-links {
     text-align: center;
-    background-color: lightgreen;
+    padding: 50px 0;
+}
+
+.media-links h2 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .media-icons {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    max-width: 660px;
-    margin: 40px auto;
+    max-width: 800px;
+    margin: 50px auto 0px auto;
 }
 
-.media-icons svg:hover {
-    fill: blue;
+.media-icons svg {
+    fill: #4b625f;
 }
 
 .footer {
@@ -101,7 +105,7 @@ main {
 }
 
 .footer-column {
-    width: 260px;
+    width: 300px;
     margin: 0 auto;
     padding: 0 40px;
 }
