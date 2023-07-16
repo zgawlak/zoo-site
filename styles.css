@@ -7,7 +7,6 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #e7e8ee;
     font-size: 18px;
     scroll-behavior: smooth;
     height: 100%;
@@ -31,20 +30,37 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     width: 75%;
     margin: 0 auto;
-}
-
-.header-logo {
-    width: 250px;
-    height: 150px;
-    background-color: blue;
-    flex-shrink: 0;
+    padding: 50px 0;
 }
 
 .header-links {
     display: flex;
-    gap: 16px;
+    gap: 32px;
     text-transform: uppercase;
     font-weight: bold;
+    align-items: center;
+}
+
+.header-links a {
+    text-decoration: none;
+    color: #fff;
+    width: 180px;
+    text-align: center;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+.header-links .link1 {
+    background-color: #5c7359;
+}
+
+.header-links .link2 {
+    background-color: #9b9fbb;
+}
+
+.header-links .link3 {
+    background-color: #5f5455;
 }
 
 main {
@@ -60,6 +76,7 @@ main {
 .media-links h2 {
     text-transform: uppercase;
     letter-spacing: 1px;
+    color: #54844d;
 }
 
 .media-icons {
