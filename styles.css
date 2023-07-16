@@ -45,11 +45,16 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     color: #fff;
-    width: 180px;
+    width: 150px;
     text-align: center;
     padding: 5px 10px;
     border: 1px solid transparent;
     border-radius: 5px;
+    transition: background-color 1s ease;
+}
+
+.header-links a:hover {
+    background-color: #3d3d3d;
 }
 
 .header-links .link1 {
@@ -84,6 +89,11 @@ main {
 
 .media-icons svg {
     fill: #4b625f;
+    transition: fill 1s ease;
+}
+
+.media-icons svg:hover {
+    fill: #000;
 }
 
 .footer {
@@ -101,7 +111,7 @@ main {
 }
 
 .footer a:hover {
-    text-decoration: underline wavy 2px;
+    text-decoration: underline;
 }
 
 .footer-columns {
@@ -138,10 +148,11 @@ main {
         display: flex;
         flex-direction: column;
         gap: 16px;
+        width: 100%;
     }
 
     .header-links {
-        justify-content: space-evenly;
-        width: 100%;
+        flex-wrap: nowrap;
+        gap: 5px;
     }
 }
