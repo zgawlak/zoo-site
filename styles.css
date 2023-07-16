@@ -88,12 +88,12 @@ main {
 }
 
 .media-icons svg {
-    fill: #4b625f;
+    fill: #000;
     transition: fill 1s ease;
 }
 
 .media-icons svg:hover {
-    fill: #000;
+    fill: #4b625f;
 }
 
 .footer {
