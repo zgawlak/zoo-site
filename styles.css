@@ -100,7 +100,7 @@ main {
 
 .media-icons svg {
     fill: #000;
-    transition: fill 1s ease;
+    transition: fill .3s ease;
 }
 
 .media-icons svg:hover {
