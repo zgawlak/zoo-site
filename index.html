@@ -110,6 +110,8 @@
                 $(this).fadeIn(1000);
             })
 
+            clearTimeout(timeoutID);
+            timeoutID = setTimeout(nextImage, 5000);
         }
 
     </script>
