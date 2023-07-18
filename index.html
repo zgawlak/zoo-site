@@ -114,6 +114,19 @@
             timeoutID = setTimeout(nextImage, 5000);
         }
 
+        function loadImages() {
+            let xhr = new XMLHttpRequest();
+            xhr.open('GET', 'images.json');
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    images = JSON.parse(xhr.responseText).images;
+                    currentIndex = 0;
+                    displayImage();
+                }
+            };
+            xhr.send();
+        }
+
     </script>
 </body>
 
