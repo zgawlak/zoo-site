@@ -191,4 +191,8 @@ main {
     .header-link-underline::after {
         transform: scale(1)
     }
+
+    .header-link-underline:hover::after {
+        transform: none;
+    }
 }
