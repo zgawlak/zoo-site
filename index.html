@@ -127,6 +127,22 @@
             xhr.send();
         }
 
+        function nextImage() {
+            currentIndex++;
+            if(currentIndex >=  images.length) {
+                currentIndex = 0;
+            }
+            displayImage();
+        }
+
+        function previousImage() {
+            currentIndex--;
+            if (currentIndex < 0) {
+                currentIndex = images.length -1;
+            }
+            displayImage();
+        }
+
     </script>
 </body>
 
