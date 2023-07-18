@@ -103,7 +103,7 @@
 
         function displayImage() {
             let currentImage = images[currentIndex];
-            let imageURL = currentImage.filename;
+            let imageURL = 'images/gallery/' + currentImage.filename;
 
             $(".gallery").fadeOut(1000, function () {
                 $(this).css('background-image', 'url(' + imageURL + ')');
@@ -143,6 +143,10 @@
             displayImage();
         }
 
+        loadImages();
+
+        $(".previous").click(previousImage);
+        $(".next").click(nextImage);
     </script>
 </body>
 
