@@ -25,9 +25,8 @@
             </div>
         </header>
         <div class="gallery">
-            <a class="gallery-button previous">
-                << /a>
-                    <a class="gallery-button next">></a>
+            <a class="gallery-button previous"><</a>
+            <a class="gallery-button next">></a>
         </div>
         <main>
         </main>
@@ -105,13 +104,13 @@
             let currentImage = images[currentIndex];
             let imageURL = 'images/gallery/' + currentImage.filename;
 
-            $(".gallery").fadeOut(1000, function () {
+            $(".gallery").fadeOut(500, function () {
                 $(this).css('background-image', 'url(' + imageURL + ')');
-                $(this).fadeIn(1000);
+                $(this).fadeIn(500);
             })
 
             clearTimeout(timeoutID);
-            timeoutID = setTimeout(nextImage, 5000);
+            timeoutID = setTimeout(nextImage, 8000);
         }
 
         function loadImages() {
