@@ -104,10 +104,7 @@
             let currentImage = images[currentIndex];
             let imageURL = 'images/gallery/' + currentImage.filename;
 
-            $(".gallery").fadeOut(500, function () {
-                $(this).css('background-image', 'url(' + imageURL + ')');
-                $(this).fadeIn(500);
-            })
+            $(".gallery").css('background-image', 'url(' + imageURL + ')').fadeIn(500);
 
             clearTimeout(timeoutID);
             timeoutID = setTimeout(nextImage, 8000);
