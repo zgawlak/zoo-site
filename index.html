@@ -104,12 +104,14 @@
         function displayImage() {
             let currentImage = images[currentIndex];
             let imageURL = currentImage.filename;
+
+            $(".gallery").fadeOut(1000, function () {
+                $(this).css('background-image', 'url(' + imageURL + ')');
+                $(this).fadeIn(1000);
+            })
+
         }
 
-        $(".gallery").fadeOut(1000, function () {
-            $(this).css('background-image', 'url(' + imageURL + ')');
-            $(this).fadeIn(1000);
-        })
     </script>
 </body>
 
