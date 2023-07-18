@@ -36,11 +36,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 100px 10px;
+    padding: 100px 0;
 }
 
 .main-image-section img {
-    max-width: 750px;
+    max-width: 100%;
+    height: auto;
 }
 
 .image-caption {
@@ -50,4 +51,20 @@
     background-color: beige;
     margin-left: -50px;
     text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+    .main-image-section {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .image-caption-box {
+        padding: 0 10px;
+    }
+    
+    .image-caption {
+        margin-top: -25px;
+        margin-left: 0;
+    }
 }
