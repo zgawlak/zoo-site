@@ -25,8 +25,9 @@
             </div>
         </header>
         <div class="gallery">
-            <a class="gallery-button previous"><</a>
-            <a class="gallery-button next">></a>
+            <a class="gallery-button previous">
+                << /a>
+                    <a class="gallery-button next">></a>
         </div>
         <main>
         </main>
@@ -95,6 +96,16 @@
             </div>
         </footer>
     </div>
+    <script>
+        let currentIndex = 0;
+        let images = [];
+        let timeoutID;
+
+        function displayImage() {
+            let currentImage = images[currentIndex];
+            let imageURL = currentImage.filename;
+        }
+    </script>
 </body>
 
 </html>
