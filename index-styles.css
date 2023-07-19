@@ -40,7 +40,8 @@
     padding: 100px 0;
 }
 
-.main-image-section img {
+.main-image-section img,
+.main-image-section-right img {
     max-width: 100%;
     height: auto;
 }
@@ -73,9 +74,11 @@
     .main-image-section-right {
         flex-wrap: wrap-reverse;
     }
-
-    .image-caption-box {
+    
+    .image-caption-box.left,
+    .image-caption-box.right {
         padding: 0 10px;
+        margin: 0;
     }
     
     .image-caption {
