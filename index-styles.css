@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Wildwest';
+    src: url('Wildwest.ttf');
+}
+
 .gallery {
     background-color: #fff;
     background-size: cover;
@@ -50,8 +55,23 @@
     max-width: 500px;
     height: auto;
     padding: 50px;
-    background-color: beige;
+    background-color: #f0e9e5;
     text-align: center;
+}
+
+.image-caption h1 {
+    font-family: 'Wildwest';
+    font-size: 48px;
+    margin-top: 0;
+    margin-bottom: -16px;
+}
+
+.image-caption h2 {
+    color: #54844d;
+}
+
+.image-caption img {
+    margin-top: 16px;
 }
 
 .left {
