@@ -72,7 +72,7 @@ h6 {
     height: 2px;
     left: 0;
     bottom: 0;
-    background-color: #54844d;
+    background-color: #f78154;
 }
 
 .header-link-underline::after {
@@ -103,13 +103,13 @@ h6 {
 }
 
 .media-icons svg:hover {
-    fill: #4b625f;
+    fill: #f78154;
 }
 
 .footer {
     display: flex;
     flex-direction: column;
-    background-color: #54844d;
+    background-color: #4d9078;
     margin: 0 auto;
     color: #fff;
     padding: 50px 10px;
@@ -221,7 +221,9 @@ h6 {
     max-width: 500px;
     height: auto;
     padding: 50px;
-    background-color: #f0e9e5;
+    border: 2px dashed #000;
+    color: #283618;
+    background-color: #f2c14e;
     text-align: center;
 }
 
@@ -278,7 +280,7 @@ h6 {
         height: 2px;
         left: 0;
         bottom: 0;
-        background-color: #54844d;
+        background-color: #f78154;
     }
 
     .header-link-underline::after {
@@ -300,6 +302,7 @@ h6 {
     .main-image-section img,
     .main-image-section-right img {
         transform: none;
+        border: none;
     }
 
     .image-caption-box.left,
@@ -311,5 +314,7 @@ h6 {
     .image-caption {
         margin-top: -25px;
         margin-left: 0;
+        padding: 25px;
+        border: none;
     }
 }
