@@ -135,58 +135,6 @@
             </div>
         </footer>
     </div>
-    <script>
-        let currentIndex = 0;
-        let images = [];
-        let timeoutID;
-
-        function displayImage() {
-            let currentImage = images[currentIndex];
-            let imageURL = 'images/gallery/' + currentImage.filename;
-
-            $(".gallery").fadeOut(500, function () {
-                $(this).css('background-image', 'url(' + imageURL + ')');
-                $(this).fadeIn(1000);
-            })
-
-            clearTimeout(timeoutID);
-            timeoutID = setTimeout(nextImage, 5000);
-        }
-
-        function loadImages() {
-            let xhr = new XMLHttpRequest();
-            xhr.open('GET', 'images.json');
-            xhr.onload = function () {
-                if (xhr.status === 200) {
-                    images = JSON.parse(xhr.responseText).images;
-                    currentIndex = 0;
-                    displayImage();
-                }
-            };
-            xhr.send();
-        }
-
-        function nextImage() {
-            currentIndex++;
-            if (currentIndex >= images.length) {
-                currentIndex = 0;
-            }
-            displayImage();
-        }
-
-        function previousImage() {
-            currentIndex--;
-            if (currentIndex < 0) {
-                currentIndex = images.length - 1;
-            }
-            displayImage();
-        }
-
-        loadImages();
-
-        $(".previous").click(previousImage);
-        $(".next").click(nextImage);
-    </script>
 </body>
 
 </html>
