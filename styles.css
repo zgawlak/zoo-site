@@ -297,6 +297,11 @@ h6 {
         flex-wrap: wrap-reverse;
     }
 
+    .main-image-section img,
+    .main-image-section-right img {
+        transform: none;
+    }
+
     .image-caption-box.left,
     .image-caption-box.right {
         padding: 0 10px;
