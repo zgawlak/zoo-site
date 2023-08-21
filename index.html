@@ -26,8 +26,9 @@
             </div>
         </header>
         <div class="gallery">
-            <a class="gallery-button previous"><</a>
-            <a class="gallery-button next">></a>
+            <a class="gallery-button previous">
+                << /a>
+                    <a class="gallery-button next">></a>
         </div>
         <div>
             <div class="main-image-section">
@@ -35,8 +36,10 @@
                 <div class="image-caption-box left">
                     <div class="image-caption">
                         <h1>Fun for Everyone</h1>
-                        <p>Durham Zoo promises an unforgettable family adventure immersed in the wonders of the animal kingdom. 
-                            As you step into this captivating haven, your senses come alive with the vibrant sights, sounds, and 
+                        <p>Durham Zoo promises an unforgettable family adventure immersed in the wonders of the animal
+                            kingdom.
+                            As you step into this captivating haven, your senses come alive with the vibrant sights,
+                            sounds, and
                             even the occasional scent of the exotic creatures that call this place home.</p>
                     </div>
                 </div>
@@ -45,19 +48,21 @@
                 <div class="image-caption-box right">
                     <div class="image-caption">
                         <h1>An Ally to the Wild</h1>
-                        <p>Renowned as an industry leader in ethical and responsible zookeeping practices, Durham Zoo sets a sterling 
-                            example for animal care and well-being. With an unwavering commitment to providing spacious and enriching 
-                            habitats, the zoo ensures its residents thrive in environments that closely mimic their natural homes.</p>
+                        <p>Renowned as an industry leader in ethical and responsible zookeeping practices, Durham Zoo
+                            sets a sterling
+                            example for animal care and well-being. With an unwavering commitment to providing spacious
+                            and enriching
+                            habitats, the zoo ensures its residents thrive in environments that closely mimic their
+                            natural homes.</p>
                     </div>
                 </div>
                 <img class="image-left" src="images/main/lemur.jpg">
             </div>
             <div class="main-image-section">
-                <img src="images/main/tiger-walk.jpg">
+                <img src="images/main/map.jpg" class="map-image">
                 <div class="image-caption-box left">
                     <div class="image-caption">
-                        <h1>Swing On By!</h1>
-                        <img src="images/main/location.png">
+                        <h1>Visit Us!</h1>
                         <h2>123 Wildwood Avenue<br>
                             Pickering, ON<br>
                             L1V 0A4</h2>
@@ -163,7 +168,7 @@
 
         function nextImage() {
             currentIndex++;
-            if(currentIndex >=  images.length) {
+            if (currentIndex >= images.length) {
                 currentIndex = 0;
             }
             displayImage();
@@ -172,7 +177,7 @@
         function previousImage() {
             currentIndex--;
             if (currentIndex < 0) {
-                currentIndex = images.length -1;
+                currentIndex = images.length - 1;
             }
             displayImage();
         }
