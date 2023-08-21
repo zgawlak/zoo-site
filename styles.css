@@ -89,6 +89,13 @@ h6 {
     padding: 50px 0;
 }
 
+.media-links h1 {
+    font-family: 'Wildwest';
+    color: #f78154;
+    font-size: 2.5em;
+    transform: rotate(5deg);
+}
+
 .media-icons {
     display: flex;
     flex-wrap: wrap;
