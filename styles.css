@@ -36,6 +36,19 @@ h6 {
     flex-direction: column;
 }
 
+.inline {
+    display: inline-block;
+}
+
+.hours {
+    display: flex;
+    align-items: center;
+}
+
+.left {
+    margin: 0 0 0 15px;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
