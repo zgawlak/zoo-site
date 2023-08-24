@@ -245,7 +245,7 @@ h6 {
     src: url('Wildwest.ttf');
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1300px) {
     .header {
         display: flex;
         flex-direction: column;
@@ -265,6 +265,19 @@ h6 {
         padding: 0 10px;
     }
 
+    .slider-container {
+        box-shadow: 0 5px 10px 2.5px;
+    }
+
+    .prev,
+    .next {
+        font-size: 32px;
+        top: calc(50% - 20px);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1000px) {
     .header-link::after {
         content: "";
         position: absolute;
@@ -281,17 +294,6 @@ h6 {
 
     .header-link-underline:hover::after {
         transform: none;
-    }
-
-    .slider-container {
-        box-shadow: 0 5px 10px 2.5px;
-    }
-
-    .prev,
-    .next {
-        font-size: 32px;
-        top: calc(50% - 20px);
-        opacity: 1;
     }
 }
 
