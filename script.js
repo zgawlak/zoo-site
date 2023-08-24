@@ -1,4 +1,4 @@
-const slides = document.querySelectorAll('.slider-image');
+const slides = document.querySelectorAll('.slide');
 const prevButton = document.querySelector('.prev');
 const nextButton = document.querySelector('.next');
 const dots = document.querySelectorAll('.dot');
@@ -23,7 +23,7 @@ function goToSlide(index) {
 
     currentSlide = index;
     clearInterval(timer);
-    timer = setInterval(nextSlide, 5000);
+    timer = setInterval(nextSlide, 8000);
 }
 
 function nextSlide() {

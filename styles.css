@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Hind&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700&family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 html,
 body {
@@ -17,7 +17,7 @@ body {
     font-size: 16px;
     scroll-behavior: smooth;
     height: 100%;
-    font-family: 'Hind', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     letter-spacing: .5px;
     line-height: 1.6;
 }
@@ -28,7 +28,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .container {
@@ -45,7 +45,7 @@ h6 {
     align-items: center;
 }
 
-.left {
+.space-left {
     margin: 0 0 0 15px;
 }
 
@@ -79,7 +79,6 @@ h6 {
 .header-link {
     text-decoration: none;
     position: relative;
-    font-family: 'Montserrat', sans-serif;
     color: #000;
     text-align: center;
     padding: 5px;
@@ -110,9 +109,51 @@ h6 {
     box-shadow: 0 5px 10px 5px black;
 }
 
+.slider-container img {
+    display: block;
+}
+
 .slider-image {
     max-width: 100%;
     height: auto;
+}
+
+.slide-text {
+    position: absolute;
+    color: #fff;
+    font-size: 18px;
+}
+
+.slide-text h2 {
+    font-family: 'Wildwest';
+    font-size: 64px;
+    margin-bottom: -20px;
+}
+
+.slide-text.left {
+    left: 8%;
+    bottom: 30%;
+}
+
+.slide-text.right {
+    right: 8%;
+    bottom: 20%;
+    text-align: right;
+}
+
+.slide-text button {
+    padding: 16px 24px;
+    font-size: 18px;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #f78154;
+    font-family: 'Quicksand', sans-serif;
+    cursor: pointer;
+    transition: background-color ease 0.3s;
+}
+
+.slide-text button:hover {
+    background-color: #f78154;
 }
 
 .slides.active {
@@ -174,6 +215,7 @@ h6 {
     color: #f78154;
     font-size: 2.5em;
     transform: rotate(5deg);
+    margin-bottom: -15px;
 }
 
 .media-icons {
@@ -295,10 +337,30 @@ h6 {
     .header-link-underline:hover::after {
         transform: none;
     }
+
+    .slide-text h2 {
+        font-size: 36px;
+    }
+
+    .slide-text {
+        font-size: 14px;
+    }
+
+    .slide-text button {
+        font-size: 14px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
     .dot {
+        display: none;
+    }
+
+    .slide-text p {
+        display: none;
+    }
+
+    .slide-text button {
         display: none;
     }
 }
