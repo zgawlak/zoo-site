@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+    x="0" y="0"
+    viewBox="6.77400016784668 46.57500076293945 90.44999694824219 53.42499923706055"
+    xml:space="preserve" height="87.00320531810362"
+    width="147.29882579110617" class="icon-icon-0"
+    data-fill-palette-color="accent" id="icon-0">
+    <g fill="#f78154" data-fill-palette-color="accent">
+        <polygon fill="#f78154" points="21.07,78.115 26.417,87.941 19.928,100 13.046,100" data-fill-palette-color="accent"></polygon>
+        <polygon fill="#f78154" points="60.734,86.577 65.427,95.227 62.572,100 55.708,100" data-fill-palette-color="accent"></polygon>
+        <polygon fill="#f78154" points="32.462,46.575 18.231,46.575 18.231,51.761 6.774,51.761 6.774,59.358 36.683,90.231 36.683,100 43.557,100 43.557,78.051 63.004,78.051 74.652,90.045 74.652,100 81.546,100 81.546,79.137 93.727,91.679 97.224,91.679 69.245,62.494 47.939,62.494" data-fill-palette-color="accent"></polygon>
+    </g>
+</svg>
