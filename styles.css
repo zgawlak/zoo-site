@@ -57,7 +57,7 @@ h6 {
 }
 
 .header-logo img {
-    max-width: 300px;
+    max-width: 100%;
     height: auto;
     transition: opacity .3s ease;
 }
@@ -130,12 +130,14 @@ h6 {
 .slide-text.left {
     left: 8%;
     bottom: 30%;
+    animation: slideIn 0.7s ease-out forwards;
 }
 
 .slide-text.right {
     right: 8%;
     bottom: 20%;
     text-align: right;
+    animation: slideIn 0.7s ease-out forwards;
 }
 
 .slide-text button {
@@ -279,6 +281,18 @@ h6 {
     padding-top: 50px;
 }
 
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 @media (max-width: 1300px) {
     .header {
         display: flex;
@@ -346,6 +360,10 @@ h6 {
 @media (max-width: 600px) {
     .dot {
         display: none;
+    }
+
+    .slide-text h2 {
+        font-size: 24px;
     }
 
     .slide-text p {
