@@ -140,7 +140,7 @@ h6 {
     animation: slideIn 0.7s ease-out forwards;
 }
 
-.slide-text button {
+.button {
     width: 180px;
     padding: 16px;
     font-size: 18px;
@@ -153,7 +153,12 @@ h6 {
     font-weight: bold;
 }
 
-.slide-text button:hover {
+.button.black {
+    width: 250px;
+    color: #333;
+}
+
+.button:hover {
     background-color: #f2c14e;
 }
 
@@ -296,7 +301,7 @@ h6 {
 
 .things {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -351,6 +356,29 @@ h6 {
 
 .animal:hover {
     transform: translate(0, -25px);
+}
+
+.gallery {
+    margin-top: 50px;
+}
+
+.row {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    align-items: center;
+}
+
+.column {
+    flex: calc(100% / 3);
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
 }
 
 .media-links {
@@ -525,6 +553,11 @@ h6 {
     .things {
         flex-direction: column;
     }
+
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
 }
 
 @media (max-width: 600px) {
@@ -562,5 +595,10 @@ h6 {
 
     .media-icons svg {
         width: 35px;
+    }
+
+    .column {
+        flex: 100%;
+        max-width: 100%;
     }
 }
