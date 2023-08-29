@@ -2,16 +2,12 @@
     box-sizing: border-box;
 }
 
-html,
-body {
-
+html, body {
     margin: 0;
     padding: 0;
 }
 
 body {
-    margin: 0;
-    padding: 0;
     font-size: 18px;
     scroll-behavior: smooth;
     height: 100%;
@@ -20,12 +16,7 @@ body {
     line-height: 1.6;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -469,7 +460,7 @@ h6 {
 }
 
 @media (max-width: 1300px) {
-    .header {
+    .header, .header-links {
         display: flex;
         flex-direction: column;
         gap: 16px;
@@ -480,20 +471,11 @@ h6 {
         padding: 0 10px;
     }
 
-    .header-links {
-        flex-wrap: nowrap;
-        gap: 5px;
-        justify-content: space-around;
-        width: 100%;
-        padding: 0 10px;
-    }
-
     .slider-container {
         box-shadow: 0 5px 10px 2.5px;
     }
 
-    .prev,
-    .next {
+    .prev, .next {
         font-size: 32px;
         top: calc(50% - 20px);
         opacity: 1;
@@ -501,24 +483,6 @@ h6 {
 }
 
 @media (max-width: 1000px) {
-    .header-link::after {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        left: 0;
-        bottom: 0;
-        background-color: #f78154;
-    }
-
-    .header-link-underline::after {
-        transform: scale(1)
-    }
-
-    .header-link-underline:hover::after {
-        transform: none;
-    }
-
     .slide-text h2 {
         font-size: 32px;
     }
