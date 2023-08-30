@@ -2,7 +2,14 @@
     box-sizing: border-box;
 }
 
-html, body {
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+html,
+body {
     margin: 0;
     padding: 0;
 }
@@ -16,7 +23,12 @@ body {
     line-height: 1.6;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -353,7 +365,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 50px;
 }
 
-.row {
+.img-row {
     margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
@@ -361,12 +373,12 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
 }
 
-.column {
+.img-column {
     flex: calc(100% / 3);
     padding: 0 4px;
 }
 
-.column img {
+.img-column img {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
@@ -460,22 +472,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 1300px) {
-    .header, .header-links {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-        width: 100%;
-    }
-
-    .header-logo img {
-        padding: 0 10px;
-    }
-
     .slider-container {
         box-shadow: 0 5px 10px 2.5px;
     }
 
-    .prev, .next {
+    .prev,
+    .next {
         font-size: 32px;
         top: calc(50% - 20px);
         opacity: 1;
@@ -483,6 +485,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 1000px) {
+    .header {
+        display: flex;
+        gap: 16px;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .header-logo img {
+        padding: 0 10px;
+    }
+
     .slide-text h2 {
         font-size: 32px;
     }
@@ -518,35 +531,30 @@ h1, h2, h3, h4, h5, h6 {
         flex-direction: column;
     }
 
-    .column {
+    .img-column {
         flex: 50%;
         max-width: 50%;
+    }
+
+    .img-column3 {
+        display: none;
     }
 }
 
 @media (max-width: 600px) {
-    .dot {
-        display: none;
-    }
-
     .slide-text h2 {
         font-size: 24px;
     }
 
-    .slide-text p {
-        display: none;
-    }
-
-    .slide-text button {
+    .dot,
+    .slide-text p,
+    .slide-text button,
+    .text-numbers {
         display: none;
     }
 
     .text p {
         font-size: 16px;
-    }
-
-    .text-numbers {
-        display: none;
     }
 
     .media-links {
@@ -561,8 +569,12 @@ h1, h2, h3, h4, h5, h6 {
         width: 35px;
     }
 
-    .column {
+    .img-column {
         flex: 100%;
         max-width: 100%;
+    }
+
+    .img-column3 {
+        display: block;
     }
 }
