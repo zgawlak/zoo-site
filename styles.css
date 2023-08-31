@@ -419,6 +419,16 @@ h6 {
     cursor: pointer;
 }
 
+.gallery-button {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+.counter {
+    display: inline-block;
+}
+
 .media-links {
     text-align: center;
     padding: 100px 0;
