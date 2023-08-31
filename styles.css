@@ -429,6 +429,50 @@ h6 {
     display: inline-block;
 }
 
+.services-sec {
+    background-image: url(images/main/services-bg.jpg);
+}
+
+.services {
+    display: flex;
+    max-width: 75%;
+    margin: 50px auto;
+    padding: 50px;
+    gap: 32px;
+}
+
+.services-title {
+    flex: 1;
+}
+
+.mobile-app {
+    flex: 2;
+    display: flex;
+    gap: 16px;
+    background-color: #f2c14e;
+    padding: 50px;
+    color: #fff;
+}
+
+.amenities {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.amenity {
+    padding: 50px;
+    width: 300px;
+    height: 300px;
+    background-color: #f4f4f4;
+}
+
+.amenity p {
+    font-size: 14px;
+}
+
 .media-links {
     text-align: center;
     padding: 100px 0;
@@ -526,6 +570,15 @@ h6 {
         top: calc(50% - 20px);
         opacity: 1;
     }
+
+    .services {
+        flex-wrap: wrap;
+    }
+
+    .services-title,
+    .mobile-app {
+        flex: 100%;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -558,7 +611,8 @@ h6 {
         margin-top: 15px;
     }
 
-    .text {
+    .text,
+    .services {
         max-width: 100%;
         padding: 25px;
     }
@@ -573,6 +627,11 @@ h6 {
 
     .things {
         flex-direction: column;
+    }
+
+    .img-row {
+        align-items: start;
+        justify-content: center;
     }
 
     .img-column {
@@ -594,6 +653,10 @@ h6 {
     .overlay-img {
         max-width: 100%;
         margin: 0 auto;
+    }
+
+    .mobile-app {
+        flex-wrap: wrap;
     }
 }
 
