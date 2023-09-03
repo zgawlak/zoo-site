@@ -107,7 +107,7 @@ h6 {
 .slider-container {
     position: relative;
     margin: auto;
-    box-shadow: 0 5px 10px 5px black;
+    box-shadow: 0 5px 10px 5px #ccc;
 }
 
 .slider-container img {
@@ -362,7 +362,7 @@ h6 {
 }
 
 .gallery {
-    margin-top: 50px;
+    margin: 100px 0;
 }
 
 .img-row {
@@ -515,7 +515,7 @@ h6 {
     height: 290px;
     background-image: url(images/main/map.jpg);
     background-position: center;
-    margin: 100px auto 50px auto;
+    margin: 200px auto 50px auto;
 }
 
 .map-text {
@@ -553,6 +553,7 @@ h6 {
 .media-links {
     text-align: center;
     padding: 100px 0;
+    margin: 50px 0;
 }
 
 .media-links h1 {
@@ -749,7 +750,7 @@ h6 {
         display: none;
     }
 
-    .tickets {
+    .tickets table {
         width: 90%;
     }
 
