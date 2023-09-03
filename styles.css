@@ -750,6 +750,14 @@ h6 {
         display: none;
     }
 
+    .intro {
+        padding: 25px;
+    }
+
+    .animal-sec {
+        padding: 25px;
+    }
+
     .tickets table {
         width: 90%;
     }
