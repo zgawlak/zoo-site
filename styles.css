@@ -475,13 +475,17 @@ h6 {
 
 .tickets {
     margin: 100px auto 0px auto;
-    width: 60%;
+    width: 100%;
+    text-align: center;
+    background-image: url(images/main/owl.png);
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
 .tickets table {
     border-collapse: collapse;
     margin: 50px auto;
-    width: 80%;
+    width: 60%;
 }
 
 .tickets th {
@@ -505,21 +509,41 @@ h6 {
     margin-top: 50px;
 }
 
+.map {
+    position: relative;
+    max-width: 1380px;
+    height: 290px;
+    background-image: url(images/main/map.jpg);
+    background-position: center;
+    margin: 100px auto 50px auto;
+}
+
+.map-text {
+    position: absolute;
+    top: 60px;
+    left: 80px;
+}
+
+.map-text button {
+    border-color: #fff;
+}
+
+.map-text button:hover {
+    background-color: #fff;
+}
+
 .card {
     height: 500px;
     padding: 30px;
     text-align: center;
     box-shadow: 0 0 10px 3px #ccc;
     max-width: 325px;
+    background-color: rgba(255, 255, 255, 0.5)
 }
 
 .card h2 {
     font-size: 3em;
     color: #f78154;
-}
-
-.tickets {
-    text-align: center;
 }
 
 .single-tickets {
@@ -731,6 +755,11 @@ h6 {
 
     .text p {
         font-size: 16px;
+    }
+
+    .map-text {
+        top: 40px;
+        left: 40px;
     }
 
     .media-links {
