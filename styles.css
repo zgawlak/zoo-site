@@ -473,6 +473,59 @@ h6 {
     font-size: 14px;
 }
 
+.tickets {
+    margin: 100px auto 0px auto;
+    width: 60%;
+}
+
+.tickets table {
+    border-collapse: collapse;
+    margin: 50px auto;
+    width: 80%;
+}
+
+.tickets th {
+    background-color: #f2c14e;
+    padding: 10px;
+}
+
+.tickets tr:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+.tickets td {
+    padding: 10px;
+}
+
+.membership {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.card {
+    height: 500px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 0 10px 3px #ccc;
+    max-width: 325px;
+}
+
+.card h2 {
+    font-size: 3em;
+    color: #f78154;
+}
+
+.tickets {
+    text-align: center;
+}
+
+.single-tickets {
+    margin-top: 100px;
+}
+
 .media-links {
     text-align: center;
     padding: 100px 0;
@@ -670,6 +723,10 @@ h6 {
     .slide-text button,
     .text-numbers {
         display: none;
+    }
+
+    .tickets {
+        width: 90%;
     }
 
     .text p {
